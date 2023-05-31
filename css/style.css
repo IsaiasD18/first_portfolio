@@ -4,8 +4,10 @@
     background-color: rgb(36, 35, 35);
     font-family: 'Oswald', sans-serif;
 }
+
 body {
-    color:aliceblue;
+    color: aliceblue;
+    text-align: center;
 }
 
 .pt {
@@ -16,43 +18,55 @@ body {
     color: lightgreen;
 }
 
+
 h2 {
     text-align: center;
-    margin: 10px;
+    margin: 80px 10px 10px 10px;
 }
 
-/* h2 {
-    margin-left: 70px;
-} */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 298px;
+}
+
+.bottom-right {
+    position: absolute;
+  bottom: 8px;
+  left: 68.6%;
+}
+
+.bottom-center {
+    position: absolute;
+  bottom: 8px;
+  left: 42.1%;
+}
+
+.center {
+    position: absolute;
+  bottom: 8px;
+  left: 34.2%;
+}
+
+.application, header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 8px 5%;
+}
 
 
-p {
+article {
     background-color: rgb(57, 54, 54);
     width: 500px;
     height: 100px;
-    margin-left: 35%;
+    margin-left: 36%;
+    margin-bottom: 20px;
     border-radius: 10px;
     border: 3px solid black;
     outline: 3px solid black;
     outline-offset: 1px;
-    /* position: absolute; 
-    bottom: 20px; */
-}
-
-.contact {
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-    padding: 8px 5%;
-    
-
-}
-
-.mypic {
-    position: relative;
-    left: 46%;
-    bottom: -10px;
-    margin: 20px;
 }
 
 a {
@@ -60,8 +74,6 @@ a {
     text-decoration: none;
     position: relative;
 }
-
-/* GLOBAL STYLE/CLASSES */
 
 .active::after, a:hover::after {
     content: '';
@@ -86,3 +98,45 @@ header nav a:not(:last-child) {
     margin-right: 10px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* DESKTOP STYLES */
+
+@media (min-width: 700px) {
+    .h2 {
+        padding: 80px 0;
+    }
+    
+    .h2 h2 {
+        font-size: 200%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    article {
+        padding: -20px;
+        margin-left: 150px;
+        margin-bottom: 90px;
+        font-size: 20px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 530px) {
+    article {
+        padding: -20px;
+        margin-left: 0px;
+        margin-bottom: 90px;
+        font-size: 20px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    h3 {
+      display: none;
+    }
+  }
