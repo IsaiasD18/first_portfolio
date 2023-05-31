@@ -17,20 +17,42 @@ body {
 }
 
 h2 {
-    margin-left: 70px;
+    text-align: center;
+    margin: 10px;
 }
+
+/* h2 {
+    margin-left: 70px;
+} */
+
 
 p {
     background-color: rgb(57, 54, 54);
     width: 500px;
     height: 100px;
-    margin-left: 50px;
+    margin-left: 35%;
     border-radius: 10px;
     border: 3px solid black;
-    outline: 3x solid black;
-    outline-offset: 100px;
+    outline: 3px solid black;
+    outline-offset: 1px;
     /* position: absolute; 
     bottom: 20px; */
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 8px 5%;
+    
+
+}
+
+.mypic {
+    position: relative;
+    left: 46%;
+    bottom: -10px;
+    margin: 20px;
 }
 
 a {
