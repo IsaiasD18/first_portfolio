@@ -1,13 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: rgb(36, 35, 35);
     font-family: 'Oswald', sans-serif;
 }
 
 body {
     color: aliceblue;
     text-align: center;
+    background-color: rgb(36, 35, 35);
 }
 
 .pt {
@@ -22,6 +22,13 @@ body {
 h2 {
     text-align: center;
     margin: 80px 10px 10px 10px;
+}
+
+h3 {
+    background-color: none;
+    color: rgb(149, 224, 136);
+    font-size: 30px;
+    
 }
 
 .bottom-left {
@@ -98,10 +105,22 @@ header nav a:not(:last-child) {
     margin-right: 10px;
 }
 
-img {
+.profile {
+    width: 90px;
+    height: 90px;
+}
+
+.image {
     max-width: 100%;
     height: auto;
+    width: 600px;
+    height: 300px;
   }
+
+img {
+    width: 300px;
+    height: 300px;
+}
 
 /* DESKTOP STYLES */
 
